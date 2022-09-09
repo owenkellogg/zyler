@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.zyler">
+    package="dj.zyler.app">
    <application
-        android:label="zyler"
+        android:label="ZYLER"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

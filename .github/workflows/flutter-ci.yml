@@ -9,6 +9,7 @@ on:
       - main
       - dev
       - staging
+      - fastlane
     
 # on: push    # Default will running for every branch.
     
@@ -65,6 +66,16 @@ jobs:
       with:
         channel: 'stable'
         architecture: x64
+        # Get flutter dependencies.
+    - run: flutter upgrade
+
+    # Get flutter dependencies.
     - run: flutter pub get
+    
+    # Check for any formatting issues in the code.
+    - run: flutter format --set-exit-if-changed .
+
+    # Run widget tests for our flutter project.
     - run: flutter test
+    
     - run: flutter build ios --release --no-codesign
