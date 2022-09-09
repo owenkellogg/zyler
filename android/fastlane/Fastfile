@@ -11,7 +11,7 @@ platform :android do
         skip_upload_images: true,
         skip_upload_screenshots: true,
         release_status: "draft",
-        version_code: flutter_version()["version_code"],
+        version_code: 0.0.1-1,
       )
     end
   end
