@@ -62,6 +62,8 @@ jobs:
         run: flutter pub get
       - name: Build App Bundle
         run: flutter build appbundle --release
+      - name: Install Fastlane Build Plugins
+        run: cd android/fastlane && fastlane update_plugins
       - name: Run Fastlane
         uses: maierj/fastlane-action@v1.4.0
         with:
