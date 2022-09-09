@@ -1,6 +1,8 @@
-# zyler
+# ZYLER for Android
 
-A new Flutter project.
+[![Flutter CI](https://github.com/zylerdj/zyler/actions/workflows/flutter-ci.yml/badge.svg)](https://github.com/zylerdj/zyler/actions/workflows/flutter-ci.yml)
+
+ZYLER native app for android
 
 ## Getting Started
 
