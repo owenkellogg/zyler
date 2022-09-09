@@ -11,8 +11,15 @@ platform :android do
         skip_upload_images: true,
         skip_upload_screenshots: true,
         release_status: "draft",
-        version_code: 0.0.1-1,
+        version_code: 00001,
       )
     end
+  end
+
+  lane :beta do
+    gradle(
+      task: 'assemble',
+      build_type: 'Release'
+    )
   end
 end
